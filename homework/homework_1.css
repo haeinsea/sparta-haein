@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  *{
+      font-family: 'Do Hyeon', sans-serif;
+  }
+  
+  .mytitle{
+      color : #fff;
+      text-align : center;
+      background-image : url('https://i.pinimg.com/564x/48/12/1a/48121aa65efb45a3bb6e93cec92be6ea.jpg');
+      width: 600px;
+      height: 400px;
+      border-radius: 10px;
+      background-position : center ;
+      background-size: cover;
+  
+      /* display flex를 쓸 때엔 아래 네 줄이 항상 묶여 다닙니다. */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  *{
+          width: 600px;
+          margin: 10px auto 0 auto;
+  }
+  
+  
+  input[type=text], select, textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    width: 82%;
+    color: white;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

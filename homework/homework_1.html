@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "homework_1.css">
+<style>
+</style>
+</head>
+
+<body>
+<div class="mytitle">
+</div>
+<div class = "title2">
+    <div id="float1" style="float:left;"> <h2>양초를 팝니다</h2></div>
+    <div id="float2" style="float:left;" ><h5>가격 : 3,000원/개</h5></div>
+    <br>
+    <p>이 양초는 사실 특별한 힘을 가지고 있어요. 양초를 켜고 소원을 빌면 짜자잔 뭐든지 이뤄지게 된답니다. <br>하나 사가세요! 대나무 향이 아주 좋아요</p>
+</div>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">주문자 이름</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="주문자 이름" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="count">수량</label>
+    </div>
+    <div class="col-75">
+      <select id="count" name="count">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">주소</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="address" placeholder="Address..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="pnumber">전화번호</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="pnumber" name="pnumber" placeholder="Phone number..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">배송 요청</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="주문하기">
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
